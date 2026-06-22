@@ -3,418 +3,220 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-
 <title>PARK DONG GEUN | LUMENTA</title>
 <meta name="description" content="PARK DONG GEUN, CEO & Founder of LUMENTA COMPANY." />
-<meta name="theme-color" content="#030303" />
+<meta name="theme-color" content="#070707" />
 <meta property="og:title" content="PARK DONG GEUN | LUMENTA" />
-<meta property="og:description" content="Building Intelligent Solutions" />
+<meta property="og:description" content="CEO & Founder | LUMENTA COMPANY" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="LUMENTA COMPANY" />
 
 <style>
 :root {
-  --bg: #030303;
-  --surface: rgba(255,255,255,.045);
-  --surface2: rgba(255,255,255,.025);
-  --line: rgba(255,255,255,.10);
-  --line2: rgba(255,255,255,.18);
-  --text: #f4f4f4;
-  --muted: rgba(255,255,255,.54);
-  --soft: rgba(255,255,255,.72);
+  --text:#f8f7f4;
+  --muted:rgba(248,247,244,.66);
+  --deep:#050505;
+  --champagne:#c8a96a;
+  --champagne2:#f0d99f;
+  --bronze:#8c6d35;
+  --ice:#d9e9ff;
+  --graphite:#101010;
+  --line:rgba(255,255,255,.105);
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  background: var(--bg);
-}
-
-body {
-  min-height: 100svh;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
-  color: var(--text);
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:#050505}
+body{
+  min-height:100svh;
+  color:var(--text);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif;
   background:
-    radial-gradient(circle at 50% -18%, rgba(255,255,255,.19), transparent 34%),
-    radial-gradient(circle at 18% 22%, rgba(255,255,255,.045), transparent 24%),
-    radial-gradient(circle at 84% 62%, rgba(255,255,255,.04), transparent 28%),
-    linear-gradient(180deg, #0a0a0a 0%, #030303 54%, #000 100%);
-  overflow-x: hidden;
+    radial-gradient(circle at 50% -18%,rgba(240,217,159,.20),transparent 32%),
+    radial-gradient(circle at 10% 20%,rgba(88,121,170,.14),transparent 24%),
+    radial-gradient(circle at 88% 74%,rgba(200,169,106,.12),transparent 28%),
+    linear-gradient(180deg,#0a0a0a 0%,#050505 55%,#010101 100%);
+  overflow-x:hidden;
 }
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
+body:before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;
   background-image:
-    linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(circle at 50% 20%, #000 0%, transparent 68%);
-  opacity: .55;
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:46px 46px;
+  mask-image:radial-gradient(circle at 50% 22%,#000,transparent 68%);
 }
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at 50% 38%, transparent 0 32%, rgba(0,0,0,.68) 100%);
-}
-
-a {
-  color: inherit;
-}
-
-.page {
-  position: relative;
-  z-index: 2;
-  min-height: 100svh;
-  width: min(100%, 560px);
-  margin: 0 auto;
-  padding: 38px 20px 34px;
-  display: grid;
-  place-items: center;
-}
-
-.panel {
-  width: 100%;
-  border-radius: 36px;
-  padding: 42px 24px 30px;
+body:after{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.052), rgba(255,255,255,.018)),
-    radial-gradient(circle at 50% 0%, rgba(255,255,255,.075), transparent 48%);
-  border: 1px solid rgba(255,255,255,.075);
+    radial-gradient(circle at 50% 42%,transparent 0 38%,rgba(0,0,0,.70) 100%),
+    linear-gradient(90deg,rgba(0,0,0,.35),transparent 24%,transparent 76%,rgba(0,0,0,.35));
+}
+.page{
+  position:relative;z-index:2;
+  min-height:100svh;
+  display:grid;
+  place-items:center;
+  width:min(100%,530px);
+  margin:auto;
+  padding:22px 14px;
+}
+.panel{
+  width:100%;
+  min-height:min(860px,calc(100svh - 44px));
+  border-radius:36px;
+  padding:46px 24px 30px;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(240,217,159,.10),transparent 34%),
+    linear-gradient(145deg,rgba(255,255,255,.060),rgba(255,255,255,.018) 46%,rgba(200,169,106,.030));
+  border:1px solid rgba(240,217,159,.13);
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,.08),
-    0 28px 90px rgba(0,0,0,.55);
-  backdrop-filter: blur(24px);
+    inset 0 -1px 0 rgba(200,169,106,.08),
+    0 32px 100px rgba(0,0,0,.62);
+  backdrop-filter:blur(24px);
 }
-
-.hero {
-  text-align: center;
-}
-
-.logo {
-  width: min(188px, 50vw);
-  height: auto;
-  overflow: visible;
+.logo{
+  width:min(192px,52vw);
+  height:auto;
+  overflow:visible;
   filter:
-    drop-shadow(0 22px 34px rgba(0,0,0,.74))
-    drop-shadow(0 0 32px rgba(255,255,255,.11));
-  animation: heroIn .9s cubic-bezier(.16,1,.3,1) both;
+    drop-shadow(0 22px 34px rgba(0,0,0,.76))
+    drop-shadow(0 0 34px rgba(255,255,255,.11))
+    drop-shadow(0 0 20px rgba(240,217,159,.06));
+  animation:heroIn .8s cubic-bezier(.16,1,.3,1) both;
 }
-
-.logo-fill {
-  fill: url(#metal);
+.logo-fill{fill:url(#logoMetal)}
+.logo-line{fill:none;stroke:url(#logoMetal);stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+.hairline{
+  width:118px;height:1px;margin:34px auto 30px;
+  background:linear-gradient(90deg,transparent,rgba(240,217,159,.62),rgba(255,255,255,.48),transparent);
+  animation:widthIn .75s ease .08s both;
 }
-
-.logo-line {
-  fill: none;
-  stroke: url(#metal);
-  stroke-width: 1;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.name{
+  font-size:clamp(30px,7vw,42px);
+  line-height:1;
+  font-weight:850;
+  letter-spacing:-1.8px;
+  background:linear-gradient(180deg,#fff 0%,#e8e3d7 38%,#b59455 65%,#fff 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:rise .65s ease .12s both;
 }
-
-.brand-mark {
-  margin-top: 18px;
-  font-size: 11px;
-  letter-spacing: 5.8px;
-  color: rgba(255,255,255,.52);
-  animation: rise .7s ease .08s both;
+.name-ko{
+  margin-top:14px;
+  font-size:24px;
+  font-weight:600;
+  letter-spacing:-.5px;
+  color:#ead7a4;
+  text-shadow:0 0 22px rgba(200,169,106,.16);
+  animation:rise .65s ease .16s both;
 }
-
-.hero-line {
-  width: 108px;
-  height: 1px;
-  margin: 32px auto 30px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,.5), transparent);
-  animation: widthIn .8s ease .12s both;
+.role{
+  margin-top:12px;
+  color:rgba(248,247,244,.62);
+  font-size:15px;
+  letter-spacing:.25px;
+  animation:rise .65s ease .2s both;
 }
-
-.name {
-  font-size: clamp(30px, 7vw, 43px);
-  line-height: .98;
-  font-weight: 850;
-  letter-spacing: -1.8px;
-  background: linear-gradient(180deg, #fff 0%, #e7e7e7 35%, #8f8f8f 62%, #fff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rise .7s ease .16s both;
+.actions{
+  margin-top:36px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  animation:rise .65s ease .26s both;
 }
-
-.name-ko {
-  margin-top: 12px;
-  font-size: 18px;
-  color: rgba(255,255,255,.7);
-  animation: rise .7s ease .2s both;
-}
-
-.role {
-  margin-top: 12px;
-  color: rgba(255,255,255,.47);
-  font-size: 14px;
-  letter-spacing: .35px;
-  animation: rise .7s ease .24s both;
-}
-
-.badge {
-  width: fit-content;
-  margin: 28px auto 0;
-  padding: 9px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.09);
-  background: rgba(255,255,255,.035);
-  color: rgba(255,255,255,.62);
-  font-size: 11px;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
-  animation: rise .7s ease .28s both;
-}
-
-.actions {
-  margin-top: 34px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  animation: rise .7s ease .32s both;
-}
-
-.action {
-  min-height: 88px;
-  border-radius: 23px;
-  padding: 15px 12px;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
+.action{
+  min-height:88px;border-radius:23px;padding:14px 10px;
+  text-decoration:none;color:inherit;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.025));
-  border: 1px solid rgba(255,255,255,.075);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.06),
-    0 12px 34px rgba(0,0,0,.28);
-  transition: transform .22s ease, border-color .22s ease, background .22s ease;
-  position: relative;
-  overflow: hidden;
+    linear-gradient(180deg,rgba(255,255,255,.070),rgba(255,255,255,.025)),
+    radial-gradient(circle at 50% 0%,rgba(240,217,159,.095),transparent 60%);
+  border:1px solid rgba(240,217,159,.12);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 12px 34px rgba(0,0,0,.30);
+  transition:transform .22s ease,border-color .22s ease,background .22s ease;
+  position:relative;overflow:hidden;
 }
-
-.action::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(115deg, transparent, rgba(255,255,255,.075), transparent);
-  transform: translateX(-120%);
-  transition: transform .7s ease;
+.action:before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(115deg,transparent,rgba(240,217,159,.14),transparent);
+  transform:translateX(-120%);transition:transform .7s ease;
 }
-
-.action:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255,255,255,.18);
+.action:hover{transform:translateY(-3px);border-color:rgba(240,217,159,.28)}
+.action:hover:before{transform:translateX(120%)}
+.icon{width:23px;height:23px;stroke:url(#accentMetal);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.action span{font-size:11px;letter-spacing:.9px;color:rgba(248,247,244,.72);text-transform:uppercase}
+.details{
+  margin-top:28px;
+  display:grid;gap:9px;
+  animation:rise .65s ease .32s both;
+}
+.detail{
+  text-decoration:none;color:inherit;
+  border-radius:18px;
+  padding:15px 16px;
+  border:1px solid rgba(240,217,159,.095);
   background:
-    linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.03));
+    linear-gradient(90deg,rgba(240,217,159,.035),rgba(255,255,255,.018));
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
 }
-
-.action:hover::before {
-  transform: translateX(120%);
+.detail small{color:rgba(240,217,159,.68);font-size:10px;letter-spacing:1.1px;text-transform:uppercase}
+.detail strong{color:rgba(255,255,255,.88);font-size:13px;font-weight:650}
+.footer{
+  text-align:center;
+  padding-top:30px;
+  color:rgba(248,247,244,.38);
+  font-size:11px;line-height:1.75;
+  animation:rise .65s ease .38s both;
 }
-
-.icon {
-  width: 24px;
-  height: 24px;
-  stroke: url(#iconMetal);
-  fill: none;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.footer b{display:block;color:rgba(234,215,164,.66);letter-spacing:4px;font-weight:500;margin-bottom:8px}
+@keyframes heroIn{from{opacity:0;transform:translateY(14px) scale(.96);filter:blur(8px)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes widthIn{from{opacity:0;width:0}to{opacity:1;width:118px}}
+@media(max-width:430px){
+  .page{padding:14px 10px}
+  .panel{border-radius:30px;padding:38px 18px 26px}
+  .actions{gap:8px}
+  .action{min-height:78px;border-radius:20px;padding:12px 8px}
+  .action span{font-size:10px}
+  .detail{padding:14px}
 }
-
-.action span {
-  font-size: 11px;
-  letter-spacing: .9px;
-  color: rgba(255,255,255,.62);
-  text-transform: uppercase;
-}
-
-.info {
-  margin-top: 24px;
-  border-radius: 28px;
-  padding: 24px 22px;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(255,255,255,.06), transparent 55%),
-    linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.014));
-  border: 1px solid rgba(255,255,255,.065);
-  text-align: center;
-  animation: rise .7s ease .36s both;
-}
-
-.info .eyebrow {
-  font-size: 10px;
-  letter-spacing: 2.2px;
-  color: rgba(255,255,255,.37);
-  text-transform: uppercase;
-  margin-bottom: 11px;
-}
-
-.info h2 {
-  font-size: 21px;
-  letter-spacing: -.55px;
-  margin-bottom: 11px;
-}
-
-.info p {
-  color: rgba(255,255,255,.55);
-  font-size: 13px;
-  line-height: 1.75;
-  word-break: keep-all;
-}
-
-.details {
-  margin-top: 18px;
-  display: grid;
-  gap: 9px;
-  animation: rise .7s ease .4s both;
-}
-
-.detail {
-  text-decoration: none;
-  border-radius: 18px;
-  padding: 14px 16px;
-  border: 1px solid rgba(255,255,255,.055);
-  background: rgba(255,255,255,.022);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-}
-
-.detail small {
-  color: rgba(255,255,255,.4);
-  font-size: 10px;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
-}
-
-.detail strong {
-  color: rgba(255,255,255,.82);
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.footer {
-  text-align: center;
-  padding-top: 28px;
-  color: rgba(255,255,255,.34);
-  font-size: 11px;
-  line-height: 1.75;
-  animation: rise .7s ease .44s both;
-}
-
-.footer b {
-  display: block;
-  color: rgba(255,255,255,.52);
-  letter-spacing: 4px;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-@keyframes heroIn {
-  from { opacity:0; transform: translateY(14px) scale(.96); filter: blur(8px); }
-  to { opacity:1; transform: translateY(0) scale(1); }
-}
-
-@keyframes rise {
-  from { opacity:0; transform: translateY(14px); }
-  to { opacity:1; transform: translateY(0); }
-}
-
-@keyframes widthIn {
-  from { opacity:0; width: 0; }
-  to { opacity:1; width: 108px; }
-}
-
-@media (max-width: 430px) {
-  .page {
-    padding: 22px 14px 24px;
-  }
-
-  .panel {
-    border-radius: 30px;
-    padding: 36px 18px 26px;
-  }
-
-  .actions {
-    gap: 8px;
-  }
-
-  .action {
-    min-height: 78px;
-    border-radius: 20px;
-    padding: 13px 8px;
-  }
-
-  .action span {
-    font-size: 10px;
-  }
-
-  .info {
-    padding: 22px 18px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,*::before,*::after {
-    animation: none !important;
-    transition: none !important;
-  }
-}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 </head>
 
 <body>
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="logoMetal" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="18%" stop-color="#e8e8e8"/>
-      <stop offset="39%" stop-color="#8e8e8e"/>
-      <stop offset="61%" stop-color="#fbfbfb"/>
-      <stop offset="82%" stop-color="#b4b4b4"/>
-      <stop offset="100%" stop-color="#6e6e6e"/>
+      <stop offset="18%" stop-color="#ececec"/>
+      <stop offset="40%" stop-color="#8f8f8f"/>
+      <stop offset="62%" stop-color="#fbfbfb"/>
+      <stop offset="82%" stop-color="#b8b8b8"/>
+      <stop offset="100%" stop-color="#727272"/>
     </linearGradient>
-    <linearGradient id="iconMetal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="52%" stop-color="#9d9d9d"/>
-      <stop offset="100%" stop-color="#f7f7f7"/>
+    <linearGradient id="accentMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8df"/>
+      <stop offset="45%" stop-color="#c8a96a"/>
+      <stop offset="100%" stop-color="#fff2bd"/>
     </linearGradient>
   </defs>
 </svg>
 
 <main class="page">
   <section class="panel">
-
-    <div class="hero">
-      <svg class="logo" viewBox="245 378 105 88" role="img" aria-label="LUMENTA COMPANY logo">
-        <defs>
-          <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#ffffff"/>
-            <stop offset="18%" stop-color="#e8e8e8"/>
-            <stop offset="39%" stop-color="#8e8e8e"/>
-            <stop offset="61%" stop-color="#fbfbfb"/>
-            <stop offset="82%" stop-color="#b4b4b4"/>
-            <stop offset="100%" stop-color="#6e6e6e"/>
-          </linearGradient>
-        </defs>
-        <path class="logo-fill" fill-rule="nonzero" d="M 302.5 411.996094 C 305.34375 413.246094 309.101562 416.730469 310.609375 419.601562 L 308.382812 419.535156 L 300.777344 419.40625 L 284.316406 419.429688 L 271.742188 419.480469 L 271.746094 390.355469 C 272.359375 391.046875 272.894531 391.695312 273.625 392.214844 L 284.082031 399.605469 C 284.332031 400.25 284.125 400.863281 284.121094 401.511719 L 284.101562 410.863281 L 297.421875 410.945312 C 299.191406 410.957031 300.90625 411.296875 302.5 411.996094 "/>
+    <svg class="logo" viewBox="245 378 105 88" role="img" aria-label="LUMENTA COMPANY logo">
+      <defs>
+        <linearGradient id="logoMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="18%" stop-color="#ececec"/>
+          <stop offset="40%" stop-color="#8f8f8f"/>
+          <stop offset="62%" stop-color="#fbfbfb"/>
+          <stop offset="82%" stop-color="#b8b8b8"/>
+          <stop offset="100%" stop-color="#727272"/>
+        </linearGradient>
+      </defs>
+      <path class="logo-fill" fill-rule="nonzero" d="M 302.5 411.996094 C 305.34375 413.246094 309.101562 416.730469 310.609375 419.601562 L 308.382812 419.535156 L 300.777344 419.40625 L 284.316406 419.429688 L 271.742188 419.480469 L 271.746094 390.355469 C 272.359375 391.046875 272.894531 391.695312 273.625 392.214844 L 284.082031 399.605469 C 284.332031 400.25 284.125 400.863281 284.121094 401.511719 L 284.101562 410.863281 L 297.421875 410.945312 C 299.191406 410.957031 300.90625 411.296875 302.5 411.996094 "/>
 <path class="logo-fill" fill-rule="nonzero" d="M 313.035156 417.707031 C 312.472656 415.921875 312.0625 414.289062 311.683594 412.519531 L 309.347656 401.613281 L 308.410156 397.542969 L 302.226562 405.597656 C 301.683594 406.304688 301.019531 406.867188 300.363281 407.441406 C 299.289062 408.277344 297.972656 408.753906 296.609375 408.503906 L 296.539062 399.898438 L 305.113281 390.339844 C 306.359375 388.953125 307.542969 387.652344 308.941406 386.464844 C 309.84375 385.699219 311.023438 385.347656 312.175781 385.730469 C 312.699219 385.902344 313.148438 386.636719 313.300781 387.183594 C 313.902344 389.367188 314.402344 391.394531 314.886719 393.628906 L 319.246094 413.863281 C 319.535156 415.210938 319.917969 416.496094 320.558594 417.652344 C 321.175781 418.761719 322.332031 419.1875 323.351562 420.203125 C 321.3125 420.3125 319.371094 420.335938 317.402344 420.210938 C 315.121094 420.066406 313.726562 419.894531 313.035156 417.707031 "/>
 <path class="logo-fill" fill-rule="nonzero" d="M 296.269531 397.4375 L 291.613281 402.226562 C 291.09375 402.761719 290.816406 403.355469 290.445312 404.15625 C 289.125 403.195312 287.769531 402.128906 286.871094 400.660156 C 285.84375 398.976562 285.953125 396.59375 287.257812 395.136719 L 288.445312 393.820312 L 296.59375 385.675781 C 297.964844 384.308594 299.625 383.53125 301.535156 383.347656 C 303.75 383.136719 306.839844 383.46875 309.167969 384.417969 C 307.789062 385.265625 306.695312 386.039062 305.652344 387.175781 L 299.707031 393.6875 L 297.785156 395.777344 Z M 296.269531 397.4375 "/>
 <path class="logo-fill" fill-rule="nonzero" d="M 284.527344 394.527344 L 277.707031 389.816406 C 276.613281 389.0625 275.695312 387.984375 275.25 386.738281 C 274.621094 384.992188 273.453125 384.355469 271.539062 383.667969 L 281.597656 383.605469 C 283.042969 383.757812 284.488281 384.832031 284.496094 386.398438 Z M 284.527344 394.527344 "/>
@@ -433,16 +235,13 @@ a {
 <path class="logo-fill" fill-rule="nonzero" d="M 324.960938 459.042969 L 324.960938 452.75 L 326.101562 452.75 L 329.042969 457.542969 L 329.042969 452.75 L 330.066406 452.75 L 330.066406 459.042969 L 328.925781 459.042969 L 325.984375 454.28125 L 325.984375 459.042969 Z M 324.960938 459.042969 "/>
 <path class="logo-fill" fill-rule="nonzero" d="M 341.789062 459.042969 L 341.789062 456.726562 L 339.460938 452.75 L 340.683594 452.75 L 342.335938 455.816406 L 344 452.75 L 345.1875 452.75 L 342.859375 456.726562 L 342.859375 459.042969 Z M 341.789062 459.042969 "/>
 <path class="logo-line" stroke-miterlimit="10" d="M -0.000757399 0.00126174 L 95.302514 0.00126174 " transform="matrix(0.998785, 0, 0, -0.998785, 249.852319, 447.231729)"/>
-      </svg>
+    </svg>
 
-      <div class="brand-mark">LUMENTA COMPANY</div>
-      <div class="hero-line"></div>
+    <div class="hairline"></div>
 
-      <h1 class="name">PARK DONG GEUN</h1>
-      <div class="name-ko">박동근</div>
-      <div class="role">CEO &amp; Founder</div>
-      <div class="badge">Black · Silver · Luxury Tech</div>
-    </div>
+    <h1 class="name">PARK DONG GEUN</h1>
+    <div class="name-ko">박동근</div>
+    <div class="role">CEO &amp; Founder</div>
 
     <nav class="actions" aria-label="Primary actions">
       <a class="action" href="tel:+821089230392" aria-label="Call Park Dong Geun">
@@ -459,25 +258,10 @@ a {
       </a>
     </nav>
 
-    <section class="info">
-      <div class="eyebrow">LUMENTA COMPANY</div>
-      <h2>Building Intelligent Solutions</h2>
-      <p>LUMENTA creates technology-driven systems for modern businesses seeking clarity, scalability and sustainable growth.</p>
-    </section>
-
     <section class="details" aria-label="Contact details">
-      <a class="detail" href="tel:+821089230392">
-        <small>Direct Line</small>
-        <strong>+82 10 8923 0392</strong>
-      </a>
-      <a class="detail" href="mailto:ceo@lumenta.co.kr">
-        <small>Business Email</small>
-        <strong>ceo@lumenta.co.kr</strong>
-      </a>
-      <a class="detail" href="https://lumenta.co.kr" target="_blank" rel="noopener">
-        <small>Official Website</small>
-        <strong>lumenta.co.kr</strong>
-      </a>
+      <a class="detail" href="tel:+821089230392"><small>Direct Line</small><strong>+82 10 8923 0392</strong></a>
+      <a class="detail" href="mailto:ceo@lumenta.co.kr"><small>Business Email</small><strong>ceo@lumenta.co.kr</strong></a>
+      <a class="detail" href="https://lumenta.co.kr" target="_blank" rel="noopener"><small>Official Website</small><strong>lumenta.co.kr</strong></a>
     </section>
 
     <footer class="footer">
@@ -485,7 +269,6 @@ a {
       Seoul, Republic of Korea<br>
       © 2026 LUMENTA COMPANY
     </footer>
-
   </section>
 </main>
 </body>
